@@ -5,6 +5,4 @@ function getSpeciesByIds(...param) {
   return pesquisaPorId;
 }
 
-console.log(data.species);
-
 module.exports = getSpeciesByIds;
