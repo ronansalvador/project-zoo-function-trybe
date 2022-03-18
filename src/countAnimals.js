@@ -10,7 +10,7 @@ function countEspecie(animal) {
   const filterResidents = data.species.find((element) => (element.name === animal.specie));
   const arrayResidentes = filterResidents.residents;
   let qte = 0;
-  arrayResidentes.forEach((element, index) => {
+  arrayResidentes.forEach((element) => {
     if (element.sex === animal.sex) {
       qte += 1;
     }
@@ -28,6 +28,7 @@ function countAnimals(animal) {
   }
   return countEspecie(animal);
 }
+
 // console.log(countAnimals());
 // console.log(countAnimals({ specie: 'penguins' })); // esperado retorno - 4
 // console.log(countAnimals({ specie: 'giraffes' })); // 6
