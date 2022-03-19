@@ -19,10 +19,10 @@ const animalporSexo = (sorted, sex) => {
     let spreadResidents = [...element.residents];
     if (sex) spreadResidents = spreadResidents.filter((animal) => animal.sex === sex);
 
-    spreadResidents = spreadResidents.map((animal) => animal.name);
+    spreadResidents = spreadResidents.map((animal) => animal.name); // Se existir a opção sex mapeia os animais por sexo.
 
     if (sorted) spreadResidents.sort();
-    obj[element.location].push({ [element.name]: spreadResidents });
+    obj[element.location].push({ [element.name]: spreadResidents }); // Se sortes: true, retorna nome de animais ordenados
   });
   return obj;
 };
