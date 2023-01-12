@@ -33,4 +33,5 @@ function getAnimalMap(options = {}) {
   return padrao();
 }
 
+getAnimalMap();
 module.exports = getAnimalMap;

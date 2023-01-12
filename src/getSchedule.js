@@ -31,8 +31,7 @@ const disponibilidade = (pesquisa) => especies.find((element) =>
 
 function getSchedule(pesquisa) {
   if (Object.keys(horas).includes(pesquisa)) return retornaDias(pesquisa);
-  if (especies.map((element) =>
-    element.name).includes(pesquisa)) return disponibilidade(pesquisa);
+  if (especies.map((element) => element.name).includes(pesquisa)) return disponibilidade(pesquisa);
 
   return agenda();
 }
